@@ -14,8 +14,12 @@ public String welcome() {
 @GetMapping(path= "/calculator/plus")
 public String plus(@RequestParam("num1") int num1,@RequestParam("num2") int num2) {
 
-    return num1 + "+" + num2 + "=" + (num1+num2);
+    return num1 + "+" + num2 + "=" + (num1 + num2);
+}
+@GetMapping(path= "/calculator/minus")
+public String minus(@RequestParam("num1") int num1,@RequestParam("num2") int num2) {
 
+    return num1 + "-" + num2 + "=" + (num1 - num2);
 }
 
 }
