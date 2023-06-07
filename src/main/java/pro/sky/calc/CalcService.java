@@ -1,39 +1,15 @@
 package pro.sky.calc;
 
-import org.springframework.stereotype.Service;
+public interface CalcService {
+     String welcome();
 
-@Service
-
-public class CalcService implements CalcServiceInterface {
-
-    public String welcome() {
-        return "Добро пожаловать в калькулятор!";
-    }
+    int plus(int num1,int num2);
 
 
-    public int plus(int num1, int num2) {
+    int minus(int num1,int num2);
 
-        return num1+num2;
-    }
+    int multiply(int num1,int num2);
 
-
-    public int minus(int num1, int num2) {
-
-        return num1-num2;
-    }
-
-
-    public int multiply(int num1, int num2) {
-
-        return num1 * num2;
-    }
-
-
-    public int divide(int num1, int num2) {
-        if (num2 == 0) {
-            throw new IllegalArgumentException("На ноль делить нельзя");
-        }
-         return num1 / num2;
-    }
+    int divide(int num1,int num2);
 
 }
