@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 
-public class CalcService {
+public class CalcService implements CalcServiceInterface {
 
     public String welcome() {
         return "Добро пожаловать в калькулятор!";

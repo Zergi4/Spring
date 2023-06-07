@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface CalcServiceInterface {
      String welcome();
 
-    String plus();
+    int plus(int num1,int num2);
 
 
-    String minus();
+    int minus(int num1,int num2);
 
-    String multiply();
+    int multiply(int num1,int num2);
 
-    String divide();
+    int divide(int num1,int num2);
 
 }
